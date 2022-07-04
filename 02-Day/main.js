@@ -74,4 +74,8 @@ console.log(user04, user03);
 console.log(user03 == user04); //true user03 y user04 son el mismo
 console.log(user02 == user04); //false
 
+// Dos objetos solo son estrictamente iguales si se refieren al mismo objeto subyacente.
+let alumnos = ['Esther', 'Melanie', 'Manolo', 'Roberto'];
+console.log(alumnos);
+console.log(typeof alumnos);
 
