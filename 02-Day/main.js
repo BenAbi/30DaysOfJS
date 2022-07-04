@@ -65,13 +65,13 @@ console.log(user01 == user01); //true
 console.log(user03 == user04); //true
 console.log(user02 == user04); //false
 
-
 user04.firstName = 'Martha'; //cambia el dato [firstName] de user04 y por ende del user03
 user03[0] = 'Sandra';
 console.log(user04[0]); //agrega un dato llamado 0 en el objeto user
-console.log(typeof user04.firstName)
-console.log(typeof user04)
+console.log(typeof user04.firstName) //string
+console.log(typeof user04) //object
 console.log(user04, user03);
 console.log(user03 == user04); //true user03 y user04 son el mismo
-console.log(user02 == user04);
+console.log(user02 == user04); //false
+
 
