@@ -27,5 +27,8 @@ console.log(age, gravity, mass, PI, boilingPoint, bodyTemp);
  * Trigonometría
  * Math.sin -> Seno
  * Math.cos -> Coseno
- * 
  */
+
+let randomNum = Math.random(); // Numero random entre 0 y 0.9999
+let randomNum10 = Math.floor(Math.random()*11); // Genera de forma aleatoria numeros del 0 al 10, con 9 oportunidades en cada opción.
+console.log(randomNum, randomNum10);
