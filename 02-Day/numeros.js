@@ -1,5 +1,4 @@
 // Los numeros pueden ser enteros y decimales. Estos pueden hacer todas las operaciones aritméticas.
-<h2>Números</h2>
 
 let age = 34
 const gravity = 9.81
