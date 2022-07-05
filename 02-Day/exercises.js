@@ -92,5 +92,8 @@ console.log(exe01.includes('on'), exe02.includes('on'))
 let exe03 = `I hope this course is not full of jargon.`
 console.log(exe03.includes('jargon'))
 
-console.log(Math.floor(Math.random()*101))
-console.log(Math.floor(Math.random()*101))
+console.log(Math.floor(Math.random()*101)) // 0 to 100
+
+console.log(Math.floor(Math.random()*51) + 50)
+//console.log(Math.floor((0.94 * 51) + 50)) - Math.floor((Math.random * (max-min)+1) + min)
+
