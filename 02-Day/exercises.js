@@ -97,3 +97,73 @@ console.log(Math.floor(Math.random()*101)) // 0 to 100
 console.log(Math.floor(Math.random()*51) + 50)
 //console.log(Math.floor((0.94 * 51) + 50)) - Math.floor((Math.random * (max-min)+1) + min)
 
+console.log(Math.floor(Math.random()*255) + 1)
+
+
+// JavaScript
+let randomJS = Math.floor(Math.random()*challenge06.length)
+console.log(randomJS)
+console.log(challenge06.charAt(randomJS))
+
+console.log('1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125')
+
+let text = 'No puedes terminar una oración con porque porque porque es una conjunción'
+console.log(text)
+console.log(text.search('porque'))
+console.log(text.substr(35, 21))
+
+// Exercise: level 3
+
+// 01
+let text02 = 'El amor es lo mejor que hay en este mundo. Algunos encontraron su amor y algunos todavía están buscando su amor.'
+
+//console.log(text02.match('amor'))
+//console.log(text02.split('amor').length - 1)
+let exp02 = /amor/gi
+console.log(text02.match(exp02))
+
+
+// 02
+let exp = /porque/gi
+console.log(text.match(exp))
+
+// 03 - Clean and find the most frequent
+const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+
+let fword = /%|#|@|&|\$/g
+newSentence = sentence.replace(fword,'')
+console.log(newSentence)
+console.log('"%" they were ' + sentence.match(/%/g).length + ' times in the sentence.')
+console.log('"#" they were ' + sentence.match(/#/g).length + ' times in the sentence.')
+console.log('"@" they were ' + sentence.match(/@/g).length + ' times in the sentence.')
+console.log('"&" they were ' + sentence.match(/&/g).length + ' times in the sentence.')
+console.log('"$" they were ' + sentence.match(/\$/g).length + ' times in the sentence.')
+
+/* Experiment
+fword = /@/g
+newSentence = newSentence.replace(fword,'')
+console.log(newSentence)
+fword = /$/g
+newSentence = newSentence.replace(fword,'')
+console.log(newSentence)
+fword = /#/g
+newSentence = newSentence.replace(fword,'')
+console.log(newSentence)
+fword = /&/g
+newSentence = newSentence.replace(fword,'')
+console.log(newSentence)
+
+console.log(sentence.match(/%/gi))
+console.log(sentence.match(/@/gi))
+console.log(sentence.match(/#/gi))
+console.log(sentence.match(/&/gi))
+console.log(sentence.replace((/#/gi,/%/gi), ''))
+console.log(sentence.replace(/%/gi, ''))
+*/
+
+// 04
+let text03 = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+console.log(text03.match(/\d+/g))
+newText03 = text03.match(/\d+/g)
+let totalIncome = Number(newText03[0]*12) + Number(newText03[1]) + Number(newText03[2]*12)
+console.log('Total annual income is ' + totalIncome)
