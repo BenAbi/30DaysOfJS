@@ -1,7 +1,6 @@
 // Tipos de datos
 console.log('02 Day: Data types');
 
-// 
 /** Datos primitivos
  *  Numeros: enteros y flotantes
  *  Cadenas: cualquier dato contenido entre " "; ' '
@@ -16,7 +15,6 @@ let plabara = 'Hola';
 let verdadero = true;
 let datoVacio = null;
 let indefinido = undefined;
-
 
 /** Datos no primitivos
  *  Objetos
@@ -78,4 +76,3 @@ console.log(user02 == user04); //false
 let alumnos = ['Esther', 'Melanie', 'Manolo', 'Roberto'];
 console.log(alumnos);
 console.log(typeof alumnos);
-
