@@ -141,4 +141,90 @@ console.log(isLightOn)
 let isMarried = !false      // true
 */
 
-// Operador de incremento 
+// Operador de incremento
+let preIncremento = 0
+console.log(++preIncremento)    //1
+console.log(preIncremento)      //1
+
+let postIncremento = 0
+console.log(postIncremento++)   //0
+console.log(postIncremento)     //1
+
+// Operador de decremento
+let preDecremento = 0
+console.log(--preDecremento)    //-1
+console.log(preDecremento)      //-1
+
+let postDecremento = 0
+console.log(postDecremento--)   //0
+console.log(postDecremento)     //-1
+
+// Operadores ternarios
+let lluvia = true
+lluvia
+? console.log('Necesitas un paraguas.')
+: console.log('No necesitas paraguas.')
+
+lluvia = false
+? console.log('Necesitas un paraguas')
+: console.log('No necesitas paraguas')
+
+let num = 5
+num > 0
+? console.log(`${num} es un numero positivo`)
+: console.log(`${num} es un numero negativo`)
+
+num = -5
+num > 0
+? console.log(`${num} es un numero positivo`)
+: console.log(`${num} es un numero negativo`)
+
+// Operador con precedente, algunos ejemplos
+
+console.log(3>2>1)      // false. Porque 3>2 es true. (true>1) true = 1 y 1 > 1 es false
+console.log(3>(2>1))    // true. Porque 2>1 es true y true = 1. 3>1 es true.
+console.log((-1)**2)    // Sintaxis correcta. No se puede escribir '-1**2'
+
+/**Window methods (ventana emergente)
+ * alert()      ventana con un botón de 'OK'                alert('message')
+ * prompt()     solicita datos.                             prompt('required text', 'optional text')
+ * confirm()    ventana con dos opciones 'OK' (true)        confirm('text')
+ *                                       'Cancel' (false)
+*/
+
+//alert('Bienvenido a 30DJS')
+//prompt('texto obligatorio', 'texto opcional')
+//const cookies = confirm(`Quieres cookies?`)
+//console.log('El usuario quiere cookies? '+cookies)
+
+/**Date Object - El tiempo es un dato importante para realizar eventos
+ * getFullYear()        Recoge el AÑO un dato de cuatro digitos (yyyy)
+ * getMonth()           Recoge el MES un numero del (0-11)
+ * getDate()            Obtiene el día un numero del (1-31)
+ * getHours()           Obtiene la hora (0-23)
+ * getMinutes()         Recoge el minuto (0-59)
+ * getSeconds()         Recoge el segundo (0-59)
+ * getMilliseconds()    Obtiene el milisegundo (0-999)
+ * getTime()            Obtiene el tiempo (milisegundos desde enero 1, 1970)
+ * getDay()             Recoge el dia de la semana como numero (0-6)
+ */
+
+//Creando el objeto de tiempo
+const now = new Date()
+console.log('Date(): '+now)
+console.log('now.getFullYear(): '+now.getFullYear())
+console.log('now.getMonth(): '+now.getMonth())
+console.log('now.getDate(): '+now.getDate())
+console.log('now.getHours(): '+now.getHours())
+console.log('now.getMinutes(): '+now.getMinutes())
+console.log('now.getSeconds(): '+now.getSeconds())
+console.log('now.getMilliseconds(): '+now.getMilliseconds())
+console.log('now.getTime(): '+now.getTime())
+console.log('now.getDay(): '+now.getDay())
+
+const year = now.getFullYear()
+const mes = now.getMonth()
+const dia = now.getDate()
+const hora = now.getHours()
+const min = now.getMinutes()
+//alert(`${dia}/${mes}/${year}  ${hora}:${min}`)
