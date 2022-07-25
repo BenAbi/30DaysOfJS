@@ -188,6 +188,7 @@ console.log(`Si x es ${x} entonces y es ${y}`)
 */
 
 //09
+/**
 let hours, rate, earning
 hours = prompt('Horas trabajadas')
 rate = prompt('Pago por hora trabajada')
@@ -196,3 +197,81 @@ rate = Number(rate)
 
 earning = hours * rate
 console.log(`Tu entrada semana es de ${earning} euros.`)
+
+//10
+let name = 'Abraham'
+name.length > 7
+? console.log(`${name} your name is long`)
+: console.log(`${name} your name is short`)
+
+//11
+let firstName, lastName
+firstName = 'Abraham'
+lastName = 'De Santa Clara'
+firstName.length > lastName.length
+? console.log(`Your first name, ${firstName} is longer than yor family name, ${lastName}`)
+: console.log(`Your last name, ${lastName} is longer than your first name, ${firstName}`)
+
+//12
+let myAge, yourAge
+myAge = 29
+yourAge = 32
+myAge > yourAge
+? console.log(`I am ${myAge - yourAge} years older than you`)
+: console.log(`You are ${yourAge - myAge} years older than me`)
+
+//13
+const now = new Date()
+const goodAge = 18
+let year, clientAge
+year = prompt('Enter birth year')
+clientAge = now.getFullYear() - year
+
+clientAge >= goodAge
+? console.log(`You are ${clientAge}. You are old enough to drive.`)
+: console.log(`You are ${clientAge}. You will bo allowed to drive after ${goodAge-clientAge} years.`)
+
+//14
+let age = prompt('Enter years you live')
+const now = new Date()
+console.log(`tiempo en segundos ${age*365*24*60*60*100} desde ${now.getFullYear() - age}`)
+
+//15
+const now = new Date()
+//I.
+console.log(`I. ${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()} ${now.getHours()}:${now.getMinutes()}`)
+//II.
+console.log(`II. ${now.getDate()}-${now.getMonth()+1}-${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`)
+//III.
+console.log(`III. ${now.getDate()}/${now.getMonth()+1}/${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`)
+*/
+
+//Exercise: Level 3
+const now = new Date()
+console.log(`${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()} ${now.getHours()}:${now.getMinutes()}`)
+
+let month, day, hours, min
+month = now.getMonth()+1
+day = now.getDate()
+hours = now.getHours()
+min = now.getMinutes()
+
+month >= 10
+? month
+: month = `0${month}`
+//console.log(month)
+
+day >= 10
+? day
+: day = `0${day}`
+//console.log(day)
+
+hours >= 10
+? hours
+: hours = `0${hours}`
+
+min >= 10
+? min
+: min = `0${min}`
+
+console.log(`${now.getFullYear()}-${month}-${day} ${hours}:${min}`)
